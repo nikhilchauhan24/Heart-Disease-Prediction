@@ -1,10 +1,10 @@
 # Heart-Disease-Prediction [Machine Learning Project]
 # Introduction
-Heart Disease , also known as cardiovascular disease is the primary basis of death worldwide over the span of past few decades. This makes heart disease a major concern to be dealt with. But, it is difficult to identify heart disease because of several contributory risk factors such as diabetes, high blood pressure, high cholestrol, abnormal pulse rate, and many other factors.
+Heart Disease , also known as cardiovascular disease, is the primary basis of death worldwide over the span of the past few decades. This makes heart disease a major concern to be dealt with. But, it is difficult to identify heart disease because of several contributory risk factors such as diabetes, high blood pressure, high cholesterol, abnormal pulse rate, and many other factors.
 So, there should be some method which can predict the heart disease in advance with as much accuracy as possible.
 So, with the help of this project, we can predict whether a person has heart disease or not. 
 I build a Machine Learning model which will take some input features and will predict the target value based on input features.
-I have use the "Logistic Regression" algorithm to train the model because our target variable will give answer in yes or no only.
+I have used the "Logistic Regression" algorithm to train the model because our target variable will give the answer in yes or no only.
 # Types of Attributes:
 1. pid: Patient identification number.
 2. age: The person's age in years.
@@ -26,7 +26,7 @@ I have use the "Logistic Regression" algorithm to train the model because our ta
 17. target: Heart disease (0= no, 1= yes).
 # Data Preprocessing Steps:
 1. Data cleaning: 
-   * In this, I remove all NULL values using 'dropna'.
+   * In this, I have removed all the NULL values using 'dropna'.
    * Then, I have checked whether there is any NULL value present or not using  
      df.isnull().any().
 
@@ -41,7 +41,7 @@ I have use the "Logistic Regression" algorithm to train the model because our ta
         Example: 
                  -  In column ‘Sex’, I replace ‘M’ with 1 and ‘F’ 
                     with 0.
-                 -  In column 'cp', I replace 'Typical Angina' with 1, Atypical Angina with 2,                     Non-Angina pain with 3, 'Asymtomatic' with 4.
+                 -  In column 'cp', I replace 'Typical Angina' with 1, Atypical Angina with 2,                     Non-Angina pain with 3, 'Asymptomatic' with 4.
    * As in column ‘fbs’, I replace ‘TRUE’ values with 1 and ‘FALSE’ values with 0. So, 
      I have to change the datatype also from ‘boolean’ to ‘int’.
      
@@ -57,5 +57,4 @@ I have use the "Logistic Regression" algorithm to train the model because our ta
 * On testing data: Maximum accuracy is achieved by Logistic Regression, i.e, 83.60%
 # Predict the target values.
 * In this, a set of input features is given to the model and then, the model will predict         whether the patient has heart disease or not.
-* If the value of target variable is 1, then, the patient has heart disease. Otherwise, not.
-     
+* If the value of the target variable is 1, then the patient has heart disease. Otherwise, not.
